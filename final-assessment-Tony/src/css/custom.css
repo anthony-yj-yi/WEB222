@@ -1,0 +1,60 @@
+﻿body h1 {
+    text-align: center;
+}
+
+body, footer {
+    background-color: lightgray;
+}
+
+.grid-container {
+    margin: 0;
+    display: grid;
+    justify-content: center;
+}
+
+@media screen and (min-width: 400px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 256px);
+    }
+}
+
+.card {
+    width: 256px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+.card-image {
+    object-fit: cover;
+    width: 256px;
+    height: 256px;
+}
+
+.card .container {
+    display: grid;
+    width: auto;
+    height: auto;
+    margin: 0 5% 5% 5%;
+}
+
+.card .container h6, .card .container p {
+    margin: 0;
+    padding: 0;
+}
+
+#newCommentForm {
+    text-align: center;
+    width: 1024px;
+    margin: 5% auto;
+    padding: 2% 0;
+}
+
+#newComment {
+    width: 50%;
+    height: 256px;
+    resize: none;
+}
+
+.checked {
+    color: orange;
+}
